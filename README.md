@@ -16,7 +16,7 @@ jobconverter镜像
 # 拉取
 docker pull qq275860560/jobconverter
 # 运行
-docker run -d -p 8080:8080 --name jobconverter qq275860560/jobconverter 
+docker run -d -p 8080:8080 qq275860560/jobconverter 
 # 测试
 存在c:/test.docx,希望转换为pdf文件，把结果存储为c:/result.pdf
 curl -o c:/result.pdf  -X POST 'http://localhost:8080/lool/convert-to' -F 'data=@C:/test.docx;type=application/octet-stream' -F 'format=pdf'
