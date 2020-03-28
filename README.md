@@ -5,7 +5,7 @@ jobconverter镜像
 适用于开发测试环境
 
 # 功能
-## office文件转换为pdf,html等格式文件
+## office文件转换为pdf,html, png, doc等格式文件
 
 
 
@@ -16,10 +16,10 @@ jobconverter镜像
 # 拉取
 docker pull qq275860560/jobconverter
 # 运行
-docker run -d -p 8012:8012 --name jobconverter qq275860560/jobverter 
+docker run -d -p 8012:8080 --name jobconverter qq275860560/jobverter 
 # 测试
 存在c:/test.docx,希望转换为pdf文件，把结果存储为c:/result.pdf
-curl -o c:/result.pdf -X POST 'http://localhost:8012/conversion' -F 'file=@C:/test.docx;type=application/octet-stream' -F 'formate=pdf'       
+curl -o c:/result.pdf  -X POST 'http://localhost:8012/lool/convert-to' -F 'data=@C:/test.docx;type=application/octet-stream' -F 'format=pdf'
 ```
  
 
