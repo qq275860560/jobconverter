@@ -5,7 +5,7 @@ jobconverter镜像
 适用于开发测试环境
 
 # 功能
-## office文件转换为pdf,html, png, doc等格式文件
+## office文件转换为pdf,html,txt,xhtml png,docx,rtf,sxw,odt等格式文件
 
 
 
